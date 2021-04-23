@@ -9,13 +9,13 @@ Product.belongsTo(Category, {
   foreignKey: "category_id",
 });
 
+// TODO: Cannot get product to show in Insomnia
+
 // Categories have many Products
 Category.hasMany(Product, {
-  foreignKey: "product_id",
+  foreignKey: "category_id",
   onDelete: "CASCADE",
 });
-
-// TODO: SEE MINI PROJECT FOR USING 'AS'
 
 // Products belongToMany Tags (through ProductTag)
 Product.belongsToMany(Tag, {
