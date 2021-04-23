@@ -15,16 +15,26 @@ Category.hasMany(Product, {
   onDelete: "CASCADE",
 });
 
+// TODO: SEE MINI PROJECT FOR USING 'AS'
+
 // Products belongToMany Tags (through ProductTag)
 Product.belongsToMany(Tag, {
-  through: "ProductTag",
-  foreignKey: "product_id",
+  through: {
+    model: ProductTag,
+    unique: false,
+    foreignKey: "product_id",
+  },
+  as: "tagged_products"
 });
 
 // Tags belongToMany Products (through ProductTag)
-Tag.belongsToMany(Product, { 
-  through: "ProductTag",
-  foreignKey: "tag_id",
+Tag.belongsToMany(Product, {
+  through: {
+    model: ProductTag,
+    unique: false,
+    foreignKey: "tag_id",
+  },
+  as: "used_tags"
 });
 
 module.exports = {
