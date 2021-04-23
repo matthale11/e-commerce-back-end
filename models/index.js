@@ -9,8 +9,6 @@ Product.belongsTo(Category, {
   foreignKey: "category_id",
 });
 
-// TODO: Cannot get product to show in Insomnia
-
 // Categories have many Products
 Category.hasMany(Product, {
   foreignKey: "category_id",
