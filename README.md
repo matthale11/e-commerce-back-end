@@ -6,8 +6,10 @@ This E-Commerce back end application uses the Express, dotenv, mysql2, and Seque
 - Tag: descriptive keywords for products
 - ProductTag: links products and tags
 ## Instructions
-Open your terminal command line and run 'npm i' to install required NPM packages and then run 'npm start' to start the server running. Once the server is listening, use Insomnia Core to modify the tables in your database.
+Open your terminal command line and run 'npm i' to install required NPM packages and then run 'node seeds/index.js' to seed the database. After the database is seeded, run 'npm start' to start the server running. Once the server is listening, use Insomnia Core to modify the tables in your database.
 
 [GitHub Repository](https://github.com/matthale11/e-commerce-back-end)
+
+[Walkthrough Video]()
 
 ![App Screenshot](screenshot.png)
