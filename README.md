@@ -10,6 +10,6 @@ Open your terminal command line and run 'npm i' to install required NPM packages
 
 [GitHub Repository](https://github.com/matthale11/e-commerce-back-end)
 
-[Walkthrough Video]()
+[Walkthrough Video](https://drive.google.com/file/d/1IrEI-pCx9eaEFkfTfiYoHMLCuobOPhTN/view)
 
 ![App Screenshot](screenshot.png)
